@@ -1,0 +1,11 @@
+node_modules
+dist
+dist-ssr
+.DS_Store
+*.local
+.verify
+.vite
+*.log
+.meter-state.json
+
+docs/diag-*.png

@@ -1,0 +1,37 @@
+{
+  "name": "ai-component-studio",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "AI 组件工坊 —— 用 AI 生成 Vue 3 组件，并在当前网页中实时加载预览",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "typecheck": "vue-tsc --noEmit -p tsconfig.json",
+    "verify:sfc": "node scripts/verify-sfc.mjs",
+    "verify:build": "node scripts/verify-build.mjs",
+    "verify:e2e": "node scripts/verify-e2e.mjs",
+    "verify:meter": "node scripts/verify-meter-e2e.mjs",
+    "meter:sim": "node scripts/meter-simulator.mjs"
+  },
+  "dependencies": {
+    "vue": "^3.5.43",
+    "vue-router": "^4.6.4",
+    "vue3-sfc-loader": "^0.9.5"
+  },
+  "devDependencies": {
+    "@codemirror/lang-vue": "^0.1.3",
+    "@codemirror/state": "^6.5.0",
+    "@codemirror/theme-one-dark": "^6.1.3",
+    "@codemirror/view": "^6.38.0",
+    "@types/node": "^24.0.0",
+    "@vitejs/plugin-vue": "^6.0.10",
+    "@vue/server-renderer": "^3.5.43",
+    "codemirror": "^6.0.2",
+    "playwright-core": "^1.64.0",
+    "typescript": "~5.9.3",
+    "vite": "^7.3.7",
+    "vue-tsc": "^3.3.13"
+  }
+}
